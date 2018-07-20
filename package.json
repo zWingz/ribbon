@@ -1,0 +1,22 @@
+{
+  "name": "ribbon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ribbon.js",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "rollup": "^0.58.2",
+    "rollup-plugin-uglify": "^3.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "rollup-plugin-babel": "^3.0.4"
+  },
+  "dependencies": {
+  }
+}
