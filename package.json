@@ -5,7 +5,7 @@
   "main": "ribbon.js",
   "scripts": {
     "build": "rollup -c",
-    "dev": "rollup -c --watch",
+    "dev": "rollup --watch -c rollup.dev.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
