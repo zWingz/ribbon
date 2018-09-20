@@ -1,6 +1,8 @@
-# canvas 彩带
+# canvas ribbon
 
-从尤大[博客](http://evanyou.me/)中提取并二次封装
+[DEMO](http://zwing.site/ribbon/)
+
+从[尤大Blog](http://evanyou.me/)中提取
 
 
 ## 参考来自
