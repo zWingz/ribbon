@@ -1,3 +1,3 @@
-import {Ribbon} from './src/ribbon'
+import Ribbon from './src/index.js'
 
 new Ribbon('#canvas')

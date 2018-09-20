@@ -157,8 +157,9 @@
                     this.render();
                 }
             })
-            ;(function() {
+            ;(() => {
                 var timer = null;
+                
                 window.addEventListener('resize', () => {
                     if(timer) {
                         window.clearTimeout(timer);

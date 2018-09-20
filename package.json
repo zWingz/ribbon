@@ -2,13 +2,32 @@
   "name": "ribbon",
   "version": "1.0.0",
   "description": "",
-  "main": "ribbon.js",
+  "main": "dist/ribbon.js",
+  "module": "es/ribbon.js",
+  "keywords": [
+    "react",
+    "image",
+    "component"
+  ],
+  "files": [
+    "dist",
+    "es",
+    "src"
+  ],
   "scripts": {
     "build": "rollup -c",
-    "dev": "rollup --watch -c rollup.dev.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "example": "rollup index.js --file ./docs/index.js --format umd",
+    "pub": "npm run build && npm publish --registry http://registry.npmjs.org --access=public"
   },
-  "author": "",
+  "author": "zhengzwing@gmail.com",
+  "homepage": "https://zwing.site/ribbon/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zWingz/ribbon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zWingz/ribbon/issues"
+  },
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -16,7 +35,5 @@
     "rollup-plugin-uglify": "^3.0.0",
     "babel-preset-es2015": "^6.24.1",
     "rollup-plugin-babel": "^3.0.4"
-  },
-  "dependencies": {
   }
 }

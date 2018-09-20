@@ -1,15 +1,23 @@
 import babel from 'rollup-plugin-babel'
 import uglify from 'rollup-plugin-uglify'
+import pkg from './package.json'
 export default {
-    input: 'src/ribbon.js',
-    output: {
-        file: 'dist/ribbon.min.js',
-        format: 'umd',
+  input: 'src/index.js',
+  output: [
+    {
+      file: pkg.main,
+      format: 'umd',
+      name: 'ribbon'
     },
-    plugins: [
-        babel({
-            exclude: 'node_modules/**'
-        }),
-        uglify()
-    ]
+    {
+      file: pkg.module,
+      format: 'es'
+    }
+  ],
+  plugins: [
+    babel({
+      exclude: 'node_modules/**'
+    }),
+    uglify()
+  ]
 }
